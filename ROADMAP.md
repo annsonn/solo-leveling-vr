@@ -14,12 +14,12 @@
 
 - [x] Create UE 5.8 VR template project (done by developer)
 - [ ] Verify OpenXR plugin enabled; SteamVR set as OpenXR runtime; template runs in headset
-- [ ] Create UE-specific `.gitignore`; init Git + Git LFS (`*.uasset`, `*.umap` tracked)
-- [ ] Initial commit of clean project
+- [x] Create UE-specific `.gitignore`; init Git + Git LFS (`*.uasset`, `*.umap` tracked; history migrated to LFS)
+- [x] Initial commit of clean project
 - [ ] Restructure content: create `Content/Arise/` folder tree per DESIGN.md
 - [ ] Add C++ game module `Arise` (empty skeleton compiles)
 - [ ] Install & connect Unreal MCP plugin; verify Claude can query the editor
-- [ ] Add AGENTS.md / DESIGN.md / ROADMAP.md to repo root (this port)
+- [x] Add AGENTS.md / DESIGN.md / ROADMAP.md to repo root (this port)
 - [ ] QA: write Phase 1 checklist
 
 **Headset test:** VR template level runs at 90 FPS via SteamVR; hands tracked; project compiles from clean clone.
@@ -192,4 +192,4 @@
 ## Session Log
 | Date | Phase | Done | Test result | Next |
 |---|---|---|---|---|
-| (agents append here) | | | | |
+| 2026-0
