@@ -24,6 +24,10 @@
 				"Linux",
 				"Android"
 			]
+		},
+		{
+			"Name": "ModelContextProtocol",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
