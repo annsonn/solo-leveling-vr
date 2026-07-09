@@ -1,5 +1,10 @@
 # PHASE1_PLAN.md — Execution Plan for opencode
 
+## STATUS (Director updates this — do not edit)
+- **Current increment: 2** (BP_ArisePawn, BP_AriseGameMode, L_Hub)
+- Increment 1 (AArisePawnBase C++): ✅ approved & committed
+- Increments 3–5: ⛔ not yet authorized
+
 > **Audience:** opencode (with Unreal MCP access).
 > **Authority:** This plan is written by the Game Director (Claude). Read `AGENTS.md` (all Global Rules apply), `DESIGN.md` §2–3, and `ROADMAP.md` Phase 1 before starting.
 > **Workflow:** Execute ONE increment at a time. STOP at every ⏸ STOP point, report results, and wait for the developer to test in-headset and relay Director review. Do not proceed past a failed acceptance check.
