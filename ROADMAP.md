@@ -4,7 +4,7 @@
 > Agents: update checkboxes and the Session Log at the end of every work session.
 > New ideas go to BACKLOG — not into the active phase.
 
-**Active phase:** Phase 0
+**Active phase:** Phase 1
 
 ---
 
@@ -13,7 +13,7 @@
 **Agents:** director, systems-engineer, vr-engineer, qa
 
 - [x] Create UE 5.8 VR template project (done by developer)
-- [ ] Verify OpenXR plugin enabled; SteamVR set as OpenXR runtime; template runs in headset
+- [x] Verify OpenXR plugin enabled; SteamVR set as OpenXR runtime; template runs in headset (PSVR2 on RX 7900 XT via `r.GraphicsAdapter=1`; tracking, interaction, rendering confirmed. Numeric 90 FPS capture folded into Phase 1 baseline)
 - [x] Create UE-specific `.gitignore`; init Git + Git LFS (`*.uasset`, `*.umap` tracked; history migrated to LFS)
 - [x] Initial commit of clean project
 - [x] Restructure content: create `Content/Arise/` folder tree per DESIGN.md (via opencode+MCP; folders empty until Phase 1 assets land)
@@ -192,4 +192,4 @@
 ## Session Log
 | Date | Phase | Done | Test result | Next |
 |---|---|---|---|---|
-| 2026-07-04 | 0 | Git LFS set up + history migrated (189 assets); baseline commit; renderer config cleaned (RT/Lumen/Substrate/VSM/distance fields OFF, forward+MSAA kept); .uproject trimmed to Windows-only, eye tracker + PICO disabled | Pending: open
+| 2026-07-08 | 0→1 | PHASE 0 CLOSED. Arise C++ module compiles + loads; Content/Arise tree via opencode 
