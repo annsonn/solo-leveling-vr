@@ -192,4 +192,5 @@
 ## Session Log
 | Date | Phase | Done | Test result | Next |
 |---|---|---|---|---|
-| 2026-07-08 | 0→1 | PHASE 0 CLOSED. Arise C++ module compiles + loads; Content/Arise tree via opencode 
+| 2026-07-08 | 0→1 | PHASE 0 CLOSED. Arise C++ module compiles + loads; Content/Arise tree via opencode MCP; MCP verified; opencode.json + tool-lane docs; QA Phase 1 checklist written; dual-GPU fix (PSVR2 on 7900 XT, r.GraphicsAdapter=1); headset run verified | Template runs in headset, hands + interaction work. Formal `stat fps`/`stat unit` capture = first Phase 1 perf task | Phase 1 kickoff: AArisePawnBase C++, own input assets, greybox hub, calibration, PERFORMANCE.md baseline |
+| 2026-07-04 | 0 | Git LFS set up + history migrated (189 assets); baseline commit; renderer config cleaned (RT/Lumen/Substrate/VSM/distance fields OFF, forward+MSAA kept); .uproject trimmed to Windows-only, eye tracker + PICO disabled | Pending: open editor (expect shader recompile), run template in headset via SteamVR, confirm 90 FPS + hands | Content/Arise tree; Arise C++ module; connect Unreal MCP connector; QA Phase 1 checklist |

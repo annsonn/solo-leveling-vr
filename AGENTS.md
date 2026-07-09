@@ -228,4 +228,9 @@ UExerciseDetectionComponent, comfort settings, and the VR pawn.
 Rules:
 - Detection thresholds live in DA_ExerciseThresholds and are per-player calibrated.
 - Emit gameplay events (Exercise.*.RepCompleted) — downstream systems never read raw motion.
-- Every change ships with an in-headset test script with expected
+- Every change ships with an in-headset test script with expected rep counts.
+- Hold the 90 FPS budget; motion sampling is the only sanctioned per-frame work.
+- You do NOT decide exercise-to-gameplay mappings — the fitness-designer specifies those.
+```
+
+Repeat the pattern for other roles as needed.

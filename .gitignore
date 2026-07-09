@@ -26,4 +26,4 @@ Plugins/**/Intermediate/
 
 # === OS noise ===
 Thumbs.db
-.DS
+.DS_Store
