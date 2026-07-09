@@ -16,9 +16,9 @@
 
 ### AI Tool Lanes (multi-tool coordination)
 Two AI tools work in this repo. Stay in your lane; the developer relays tasks between tools.
-- **Claude (Cowork):** file work — C++ source, Config/*.ini, .uproject, docs (AGENTS/DESIGN/ROADMAP), data-table CSVs. Owns ALL git operations (stage, commit, history). Cannot see or operate the Unreal editor.
-- **opencode + Unreal MCP:** in-editor work only — Content Browser assets, Blueprints, levels, folder structure. Must NOT run git commands, must NOT edit source/config/doc files directly, and must NOT modify `/Game/XRFramework` or delete assets without developer confirmation.
-- Only one tool works at a time. After editor work that creates/modifies assets, the developer tells Claude so changes get committed with the proper `[Phase N][Role]` message.
+- **Claude (Cowork) = Director/Orchestrator:** planning and specs (writes `PHASE<N>_PLAN.md` execution plans), code review, Config/*.ini and .uproject changes, docs (AGENTS/DESIGN/ROADMAP/QA), PERFORMANCE.md. Owns ALL git operations (stage, commit, history). Cannot see or operate the Unreal editor.
+- **opencode + Unreal MCP = Implementer:** executes the active `PHASE<N>_PLAN.md` — C++ source under `Source/`, and in-editor work (Blueprints, levels, input assets, materials) under `Content/Arise/`. One increment at a time; stop at every STOP point for developer test + Director review. Must NOT run git commands, must NOT edit Config/.uproject/docs, must NOT touch `/Game/XRFramework`, must NOT delete assets without developer confirmation.
+- Only one tool works at a time. After each increment the developer relays results to Claude for review and commit with the proper `[Phase N][Role]` message.
 
 ### Universal Workflow Rules
 1. **Small steps, always testable.** Every task ends with a concrete "test this in the headset (or in PIE)" instruction. Never batch multiple systems into one change.
@@ -228,9 +228,4 @@ UExerciseDetectionComponent, comfort settings, and the VR pawn.
 Rules:
 - Detection thresholds live in DA_ExerciseThresholds and are per-player calibrated.
 - Emit gameplay events (Exercise.*.RepCompleted) — downstream systems never read raw motion.
-- Every change ships with an in-headset test script with expected rep counts.
-- Hold the 90 FPS budget; motion sampling is the only sanctioned per-frame work.
-- You do NOT decide exercise-to-gameplay mappings — the fitness-designer specifies those.
-```
-
-Repeat the pattern for other roles as needed.
+- Every change ships with an in-headset test script with expected
