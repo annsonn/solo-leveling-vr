@@ -5,4 +5,24 @@ Intermediate/
 Saved/
 Build/
 
-# Plugin build artifacts (source plu
+# Plugin build artifacts (source plugins stay tracked)
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+
+# === IDE / editor ===
+.vs/
+.vscode/
+.idea/
+*.sln
+*.suo
+*.opensdf
+*.opendb
+*.sdf
+*.VC.db
+*.VC.opendb
+*.xcodeproj
+*.xcworkspace
+
+# === OS noise ===
+Thumbs.db
+.DS_Store

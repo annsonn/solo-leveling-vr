@@ -192,4 +192,4 @@
 ## Session Log
 | Date | Phase | Done | Test result | Next |
 |---|---|---|---|---|
-| 2026-0
+| 2026-07-04 | 0 | Git LFS set up + history migrated (189 assets); baseline commit; renderer config cleaned (RT/Lumen/Substrate/VSM/distance fields OFF, forward+MSAA kept); .uproject trimmed to Windows-only, eye tracker + PICO disabled | Pending: open editor (expect shader recompile), run template in headset via SteamVR, confirm 90 FPS + hands | Content/Arise tree; Arise C++ module; connect Unreal MCP connector; QA Phase 1 checklist |
