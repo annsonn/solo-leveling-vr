@@ -16,9 +16,9 @@
 - [ ] Verify OpenXR plugin enabled; SteamVR set as OpenXR runtime; template runs in headset
 - [x] Create UE-specific `.gitignore`; init Git + Git LFS (`*.uasset`, `*.umap` tracked; history migrated to LFS)
 - [x] Initial commit of clean project
-- [ ] Restructure content: create `Content/Arise/` folder tree per DESIGN.md
+- [x] Restructure content: create `Content/Arise/` folder tree per DESIGN.md (via opencode+MCP; folders empty until Phase 1 assets land)
 - [ ] Add C++ game module `Arise` (empty skeleton compiles)
-- [ ] Install & connect Unreal MCP plugin; verify Claude can query the editor
+- [x] Install & connect Unreal MCP plugin; verify AI can query the editor (verified via opencode: engine version, level actors, plugin list)
 - [x] Add AGENTS.md / DESIGN.md / ROADMAP.md to repo root (this port)
 - [ ] QA: write Phase 1 checklist
 
@@ -192,4 +192,4 @@
 ## Session Log
 | Date | Phase | Done | Test result | Next |
 |---|---|---|---|---|
-| 2026-07-04 | 0 | Git LFS set up + history migrated (189 assets); baseline commit; renderer config cleaned (RT/Lumen/Substrate/VSM/distance fields OFF, forward+MSAA kept); .uproject trimmed to Windows-only, eye tracker + PICO disabled | Pending: open editor (expect shader recompile), run template in headset via SteamVR, confirm 90 FPS + hands | Content/Arise tree; Arise C++ module; connect Unreal MCP connector; QA Phase 1 checklist |
+| 2026-07-04 | 0 | Git LFS set up + history migrated (189 assets); baseline commit; renderer config cleaned (RT/Lumen/Substrate/VSM/distance fields OFF, forward+MSAA kept); .uproject trimmed to Windows-only, eye tracker + PICO disabled | Pending: open editor (expect shader recompile), run template in headset via St
