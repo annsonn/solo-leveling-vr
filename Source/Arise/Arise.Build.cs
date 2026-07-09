@@ -12,7 +12,9 @@ public class Arise : ModuleRules
 			"CoreUObject",
 			"Engine",
 			"InputCore",
-			"EnhancedInput"
+			"EnhancedInput",
+			"HeadMountedDisplay",
+			"XRBase"
 		});
 
 		// GAS modules (GameplayAbilities, GameplayTags, GameplayTasks) added in Phase 4.
