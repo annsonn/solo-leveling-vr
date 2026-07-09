@@ -30,7 +30,7 @@ The player is **Sung Jin-Woo**, immediately after surviving the double dungeon a
 | Ability/stat framework | **Gameplay Ability System (GAS)** |
 | Enemy AI | **StateTree** (Behavior Trees only if a case demands it) |
 | Source control | Git + Git LFS (`*.uasset`, `*.umap` in LFS) |
-| AI tooling | Claude (Cowork/Code) + Unreal MCP plugin for editor automation |
+| AI tooling | Claude (Cowork/Code): files, git, docs. opencode + Unreal MCP plugin: in-editor automation. Lanes defined in AGENTS.md |
 
 **Module layout:** single game module `Arise` initially; split later only if compile times demand.
 **Content root:** `Content/Arise/{Core, Characters, Enemies, Dungeons, UI, VFX, Audio, Input, Data}`.

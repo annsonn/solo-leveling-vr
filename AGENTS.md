@@ -14,6 +14,12 @@
 - **Legal status:** Personal, non-commercial fan project. Never prepare store/distribution builds. If distribution is ever discussed, escalate to the Director — all IP (names, System visuals, story) must be replaced with legally distinct equivalents first.
 - **Developer:** Solo developer assisted by AI agents. Claude edits files; the developer compiles and tests in-headset.
 
+### AI Tool Lanes (multi-tool coordination)
+Two AI tools work in this repo. Stay in your lane; the developer relays tasks between tools.
+- **Claude (Cowork):** file work — C++ source, Config/*.ini, .uproject, docs (AGENTS/DESIGN/ROADMAP), data-table CSVs. Owns ALL git operations (stage, commit, history). Cannot see or operate the Unreal editor.
+- **opencode + Unreal MCP:** in-editor work only — Content Browser assets, Blueprints, levels, folder structure. Must NOT run git commands, must NOT edit source/config/doc files directly, and must NOT modify `/Game/XRFramework` or delete assets without developer confirmation.
+- Only one tool works at a time. After editor work that creates/modifies assets, the developer tells Claude so changes get committed with the proper `[Phase N][Role]` message.
+
 ### Universal Workflow Rules
 1. **Small steps, always testable.** Every task ends with a concrete "test this in the headset (or in PIE)" instruction. Never batch multiple systems into one change.
 2. **Read before write.** Consult `DESIGN.md` and `ROADMAP.md` before starting. Confirm which roadmap phase is active; don't build ahead of the current phase without Director approval.
